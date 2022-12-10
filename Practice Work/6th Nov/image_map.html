@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+</head>
+<body>
+    
+    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        usemap="#ads" alt="coding image" width="500" title="coding image">
+    
+    <!-- map tag is used with respect to img tag. map tag can be used to redirect to some other site. (Real world eg would be ad page while clicking visiting or clicking some button) -->
+    <map name="ads">
+        <area shape="circle" coords="90 75 75" href="https://htmlcssprofile.netlify.app" alt="html css page" target="_blank"
+            title="ad">
+    </map>
+
+    <br><br><br>
+
+    <img src="./assets/coder.jpg" alt="coder" usemap="#coder">
+
+    <map name="coder">
+        <area onclick="myfuncOne()" target="" alt="" title="" href="" coords="63,41,314,258" shape="rect">
+        <area onclick="myfuncTwo()" target="" alt="" title="" href="" coords="540,198,97" shape="circle">
+    </map>
+
+
+    <script>
+        function myfuncOne() {
+            alert('rectangle area clicked')
+        }
+
+        function myfuncTwo() {
+            alert('circle area clicked')
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Roboto, 'sans-serif';
+}
+
+body {
+    max-width: 1440px;
+    background-color: #F0F4F5;
+    overflow: hidden;
+}
+
+/* Navbar */
+nav {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 60px;
+    font-weight: 700;
+}
+
+nav ul li:first-child{
+    color: #20bc7e;
+}
+
+nav ul li:hover {
+    color: #20bc7e;
+    cursor: pointer;
+}
+
+/* Main section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+}
+
+main section {
+    width: 50%;
+}
+
+/* Main - Left Section */
+main .leftsection {
+    margin-left: 5%;
+    margin-top: 10px;
+    position: relative;
+}
+
+main .leftsection .topangle {
+    top: 0;
+    left: 0;
+}
+
+main .leftsection h1 {
+    font-size: 72px;
+    line-height: 95px;
+    color: #0d0d0d;
+}
+
+main .leftsection p {
+    font-size: 20px;
+    color: #868484;
+    margin-top: 30px;
+}
+
+main .leftsection button {
+    background-color: #20bc7e;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 50px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+main .leftsection .bottomangle {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+
+main .leftsection .mouse {
+    position: absolute;
+    right: -50px;
+    bottom: 2%;
+}
+
+main .leftsection .stethoscope {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    width: 550px;
+}
+
+/* Main - Right Section */
+main .rightsection .greenbox {
+    position: absolute;
+    right: 8px;
+    top: 150px;
+    width: 35%;
+}
+
+main .rightsection .yellowbox {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 30%;
+}
+
+main .rightsection .doctor {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    height: 90%;
+}

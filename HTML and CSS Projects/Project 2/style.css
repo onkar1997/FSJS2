@@ -1,0 +1,114 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, 'sans-serif';
+    color: #FFF;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url('./assets/bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #0D0D0D;
+}
+
+nav .logo {
+    width: 100px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+.list .list-item {
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.list:first-child{
+    margin-left: -20%;
+}
+
+.list> :first-child::after {
+    content: 'v';
+    padding-left: 10px;
+}
+
+.line {
+    height: 6vh;
+    border-right: solid 1px #FFF;
+    margin-left: -5%;
+}
+
+.button-small {
+    background-color: #c60ddf;
+    padding: 7px 20px;
+    color: #FFF;
+    border-radius: 4px;
+    border: solid 1px #c60ddf;
+    font-family: Montserrat, 'sans-serif';
+    cursor: pointer;
+}
+
+.button-small:hover {
+    background-color: #fff;
+    color: #c60ddf;
+    border: solid 1px #0D0D0D;
+}
+
+/* Hero section */
+.hero {
+    width: 100vw;
+    padding: 7% 20% 0%;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 22px;
+    margin: 10px 0px 50px 0px;
+    font-family: Poppins, 'sans-serif';
+}
+
+.button-large {
+    background-color: #c60ddf;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Poppins, 'sans-serif';
+    cursor: pointer;
+}
+
+.button-large:hover {
+    background-color: #fff;
+    color: #c60ddf;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, 'sans-serif';
+}
+
+body {
+    max-width: 1440px;
+    /* overflow: hidden; */
+    background-color: rgba(46, 45, 32, 0.9);
+    margin: 0 10%;
+}
+
+/* Navbar */
+nav {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a img {
+    width: 75%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #8f8e8e;
+    font-size: 14px;
+}
+
+nav ul li {
+    margin-right: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li:first-child {
+    color: #be9b1d;
+}
+
+nav ul li:hover {
+    color: #be9b1d;
+}
+
+nav ul li button {
+    background: transparent;
+    border: solid 1px #be9b1d;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: #be9b1d;
+    border-radius: 10px;
+}
+
+nav ul li button:hover {
+    background-color: #be9b1d;
+    color: rgba(46, 45, 32, 0.9);
+    cursor: pointer;
+}
+
+/* Main - Leftsection */
+main {
+    color: #fff;
+}
+
+main .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+}
+
+main .top .leftsection h1 {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+main .top .rightsection p {
+    line-height: 1.7rem;
+}
+
+main .bottom img {
+    width: 100%;
+}

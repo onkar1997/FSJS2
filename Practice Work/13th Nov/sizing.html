@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Margin Padding and Position</title>
+    <style>
+        .container {
+            border: solid 2px red;
+            margin: 50px;
+        }
+
+        p {
+            padding: 50px;
+        }
+
+        li {
+            list-style-type: circle;
+        }
+
+        /* Positioning - static, sticky, fixed, relative, absolute 
+            static and sticky works like same with 1 difference
+        */
+        /*.Box1 {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+        }
+
+        .Box2 {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+        }*/
+
+        /* Float - left, right, inherit, none */
+        .square1 {
+            width: 70px;
+            height: 70px;
+            background-color: #50DBB4;
+            float: left;
+        }
+        .square2 {
+            width: 170px;
+            height: 170px;
+            background-color: #6EC72D;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Namste Bacho</p>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    
+    <div class="conatiner">
+        <p class="Box1">
+            one
+        </p>
+        <p class="Box2">
+            Two
+        </p>
+    </div>
+
+    <div class="square1">one</div> 
+    <div class="square2">two</div>
+</body>
+</html>

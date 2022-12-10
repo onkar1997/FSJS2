@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal Selctor */
+        * {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* individual selector */
+        span {
+            background-color: #1FAA59;
+        }
+
+        /* class and id selctor */
+        #my_id {
+            background-color: #FF6263;
+        }
+
+        .my_class {
+            background-color: #1B98F5;
+        }
+
+        /* and(chained) selector */
+        .bg-black.text-white {
+            background-color: #1C8D73;
+            color: #fff;
+        }
+
+        /* combined selector */
+        div > p, a {
+            background-color: #E8BD0D;
+        }
+
+        /* inside an element */
+        div ul li {
+            color: #FF6263;
+        }
+
+        /* direct child */
+        div > ul > li {
+            background-color: #fff;
+        }
+
+        /* sibling (~,+) */
+        .sibling ~ p {
+            background-color: #8D3DAF;
+        }
+
+        .sibling + p {
+            background-color: #E07C24;
+        }
+
+        /* PSEUDO SELECTORS ::before and ::after */
+        h1::before {
+            content: 'before';
+            display: block;
+            font-size: 10px;
+            width: 80px;
+            height: 10px;
+            background-color: #1B98F5;
+            border: solid 1px #1B98F5;
+        }
+
+        h1::after {
+            content: 'after';
+            display: block;
+            font-size: 10px;
+            width: 80px;
+            height: 10px;
+            background-color: #1B98F5;
+            border: solid 1px #1B98F5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-black my_class">Welcome to live class</div>
+    <span>Span is just a span, nothing more</span>
+    <p id="my_id">We all know paragraph</p>
+    <ul>
+        <li class="bg-black text-white">item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+    
+    <div>
+        <p>lorem</p>
+        <li>awesome</li>
+        <ul>
+            <li>highlight me <a href="#">test</a></li>
+            <li>highlight me</li>
+        </ul>
+    </div>
+    
+    <section>
+        <p class="sibling">Test 1</p>
+        <p>Test 2</p>
+        <p>Test 3</p>
+        <p>Test 4</p>
+        <p>Test 5</p>
+    </section>
+
+    <hr>
+
+    <!-- Pseudo Selectors -->
+    <h1>hello</h1>
+</body>
+</html>

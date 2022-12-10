@@ -1,0 +1,118 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+* {
+    margin:0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, 'sans-serif';
+    max-height: 100vh;
+    max-width: 1440px;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.navbar-container img {
+    width: 100px;
+}
+
+.grow-list {
+    width: 500px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    color: #afafaf;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: -100px;
+}
+
+.list-item:nth-child(1) {
+    color: #333;
+}
+
+.navbar-container .nav-button {
+    padding: 12px 20px;
+    border-radius: 7px;
+    background-color: #5A20CB;
+    color: #FFF;
+    border: solid 1px #5A20CB;
+    cursor: pointer;
+}
+
+.navbar-container .nav-button:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    color: #5A20CB;
+    border: solid 1px #5A20CB;
+}
+
+/* Banner */
+.banner-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container > div {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-container img {
+    height: 500px;
+}
+
+.banner-container .heading-text {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #1e0947;
+}
+
+.banner-container .heading-text span {
+    color: #5A20CB;
+}
+
+.banner-container .description {
+    color: #afafaf;
+    margin: 20px 0 50px 0;
+}
+
+.banner-container .btn {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: #5A20CB;
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 30px;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid #5A20CB;
+}
+
+.banner-container .btn:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    color: #5A20CB;
+    border: solid 1px #5A20CB;
+}
