@@ -44,6 +44,13 @@
 [Solution](./Tailwind%20CSS%20Assignment/Project%201/readme.md)
 
 
+<!-- Javascript Assignment -->
+
+## Javascript Assignment
+
+[Solution](./Tailwind%20CSS%20Assignment/Project%201/readme.md)
+
+
 <!-- Practice Work -->
 
 ## Practice Work
